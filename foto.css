@@ -1,0 +1,73 @@
+/* Fundo e texto geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d1117; /* fundo escuro estiloso */
+    color: white;
+}
+
+/* Título da página */
+.photos {
+    text-align: center;
+    padding: 40px;
+}
+
+.photos h1 {
+    color: #ffffff;
+    font-size: 2.3rem;
+}
+
+/* Galeria de fotos */
+.gallery {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* controle automático */
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Ajuste de tamanho das imagens */
+.photo-item img {
+    width: 100%;              /* faz a imagem preencher o bloco */
+    max-width: 350px;         /* <<< AQUI você controla o tamanho máximo */
+    border-radius: 12px;
+    border: 3px solid #1f6feb; /* azul estilo GitHub */
+    display: block;
+    margin: auto;
+    transition: .3s;
+}
+
+/* Ajuste do vídeo */
+.photo-item video {
+    width: 100%;
+    max-width: 350px;         /* <<< AQUI você controla o tamanho máximo do vídeo */
+    border-radius: 12px;
+    border: 3px solid #1f6feb;
+    display: block;
+    margin: auto;
+    transition: .3s;
+}
+
+/* Hover bonito */
+.photo-item img:hover,
+.photo-item video:hover {
+    transform: scale(1.05);
+    border-color: #388bfd;
+}
+
+/* Botão de voltar */
+.btn {
+    margin-top: 30px;
+    background: #1f6feb;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #388bfd;
+}

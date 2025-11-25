@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+/* Página inicial */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.4s ease forwards;
+    opacity: 0;
+}
+
+.title {
+    font-size: 55px;
+    font-weight: bold;
+    color: #00ff9d;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #cfcfcf;
+    margin-top: 12px;
+}
+
+/* Botões principais */
+.btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    color: #0d0d0d;
+    background: #00ff9d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ae78c;
+}
+
+/* Página Sobre Mim */
+.container-texto {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+}
+
+.container-texto h2 {
+    color: #00ff9d;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.container-texto p {
+    line-height: 1.6;
+    font-size: 17px;
+    color: #e0e0e0;
+}
+
+/* Botão de voltar */
+.back {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.back a {
+    color: #00ff9d;
+    text-decoration: none;
+}
+
+.back a:hover {
+    color: #0ae78c;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
